@@ -1,0 +1,13 @@
+# 客户现场改参数只改这个文件，不改代码 —— 这是交付项目的铁律
+name: doc-parser
+version: "0.1.0"
+debug: false
+log_dir: logs
+log_level: INFO
+max_file_size_mb: 50
+allowed_extensions:
+  - .pdf
+  - .docx
+  - .txt
+  - .xlsx
+max_pdf_pages: 200

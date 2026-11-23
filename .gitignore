@@ -1,0 +1,36 @@
+# 虚拟环境（几十 MB、上千文件，绝对不能传）
+.venv/
+venv/
+env/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# 运行产物
+logs/
+*.log
+
+# PyCharm 配置（含个人路径，不该进仓库）
+.idea/
+*.iml
+
+# 临时实验脚本（Day 7 手册明确要求排除）
+tmp_*.py
+
+# 含 NUL(\x00) 控制字符的脏样本：git 会当二进制文件处理，
+# 且文本工具无法正常打开
+samples/tmp_dirty.txt
+
+# 本地笔记（不随代码发布）
+错误本.md
+面试素材.md
+测试记录_*.md
+手册/
+
+# 系统文件
+.DS_Store
+Thumbs.db
